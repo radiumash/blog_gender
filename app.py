@@ -16,7 +16,7 @@ st.write(f'You wrote {len(blog)} characters.')
 if st.button("Predict", type="primary"):
     if blog != "":
         #model = pickle.load(open('Blog_navbaise_model.pkl', 'rb'))
-        data = pd.read_excel('BLOG GENDER BALANCED.xlsx')
+        data = pd.read_excel('data/BLOG GENDER BALANCED.xlsx')
         data.dropna(subset=["BLOG"],inplace=True)
         data1 = pd.DataFrame({
             "BLOG": [blog],
